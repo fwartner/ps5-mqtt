@@ -11,9 +11,6 @@ See **Documentation** tab for more details.
 ![Supports armv7 Architecture][armv7-shield]
 ![Supports i386 Architecture][i386-shield]
 
-[![flat](https://dcbadge.vercel.app/api/server/BnmvYHvz5N?style=flat)][discord]
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)][paypal]
-
 ## Updating the Edge add-on
 To update the edge version of the add-on, you will need to uninstall and re-install the add-on.
 
@@ -29,13 +26,8 @@ To update the edge version of the add-on, you will need to uninstall and re-inst
 ## Support the project!
 If you enjoy the project please consider donating to sponsor further development! 💕
 
-<a href="https://www.buymeacoffee.com/funkeyflo" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
-
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
 [armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
-
-[paypal]: https://www.paypal.com/donate/?hosted_button_id=VLDJUM2CMHMNG
-[discord]: https://discord.gg/BnmvYHvz5N
