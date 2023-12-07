@@ -1,3 +1,12 @@
+## 0.1.3 - 2023-12-07
+
+### What’s changed
+
+### ⬆️ Dependency updates
+
+- Bump eslint-plugin-react from 7.31.10 to 7.33.2 in /ps5-mqtt @dependabot (#2)
+- Bump grommet-icons from 4.8.0 to 4.11.0 in /ps5-mqtt @dependabot (#3)
+
 ## 0.1.2 - 2023-12-07
 
 ### What’s changed
@@ -81,6 +90,7 @@ Users can now specify the preferred console per account. This is useful when, fo
   npsso: '!secret my_npsso'
   preferred_ps5: 70C881D600B0      # ID of the PS5 that will be preferred when activity can be matched to multiple PS5's 
   preferred_ps4: 60E899D600B0      # ID of the PS4 that will be preferred when activity can be matched to multiple PS4's
+
 
 
 
