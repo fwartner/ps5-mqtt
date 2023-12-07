@@ -1,0 +1,8 @@
+dist
+.resources
+**/.env
+**/node_modules
+NOTES.md
+.docker-test
+options.dev.json
+coverage
