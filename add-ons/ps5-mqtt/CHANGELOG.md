@@ -1,3 +1,11 @@
+## 0.1.4 - 2023-12-07
+
+### What’s changed
+
+### ⬆️ Dependency updates
+
+- Bump ts-jest from 29.0.3 to 29.1.1 in /ps5-mqtt @dependabot (#5)
+
 ## 0.1.3 - 2023-12-07
 
 ### What’s changed
@@ -90,6 +98,7 @@ Users can now specify the preferred console per account. This is useful when, fo
   npsso: '!secret my_npsso'
   preferred_ps5: 70C881D600B0      # ID of the PS5 that will be preferred when activity can be matched to multiple PS5's 
   preferred_ps4: 60E899D600B0      # ID of the PS4 that will be preferred when activity can be matched to multiple PS4's
+
 
 
 
