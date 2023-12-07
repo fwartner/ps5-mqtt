@@ -1,3 +1,11 @@
+## 0.1.2 - 2023-12-07
+
+### What’s changed
+
+### ⬆️ Dependency updates
+
+- Bump jest and @types/jest in /ps5-mqtt @dependabot (#1)
+
 ## 0.1.1 - 2023-12-07
 
 ### What’s changed
@@ -73,6 +81,7 @@ Users can now specify the preferred console per account. This is useful when, fo
   npsso: '!secret my_npsso'
   preferred_ps5: 70C881D600B0      # ID of the PS5 that will be preferred when activity can be matched to multiple PS5's 
   preferred_ps4: 60E899D600B0      # ID of the PS4 that will be preferred when activity can be matched to multiple PS4's
+
 
 
 
@@ -176,6 +185,7 @@ Take a look at the [documentation](https://github.com/FunkeyFlo/ps5-mqtt/blob/ma
 ### What’s changed
 
 - client improvements @FunkeyFlo (#19)
+  
 - - added dark/light theme option to client UI 🌗
   
 - 
@@ -213,8 +223,11 @@ Because the add-on switched from locally built Dockerfiles to pre-built images y
 ## 0.6.2
 
 - Added a Web UI to acquire credentials through the Add-on itself.
+  
 - Credentials file will now be written to the file `/config/ps5-mqtt/credentials.json`.
+  
 - ⚠ **Deprecation Warning**
+  
 - - The `ps5_credentials` option is deprecated and will be removed with the next *[minor](https://semver.org/)* release. Check the [docs](/ps5-mqtt/DOCS.md) for migration options.
   
 - 
@@ -236,6 +249,7 @@ Because the add-on switched from locally built Dockerfiles to pre-built images y
 ## 0.5.0
 
 - Changed MQTT implementation to...
+  
 - - ...reduce amount of messages being sent.
   
 - 
@@ -262,6 +276,7 @@ Because the add-on switched from locally built Dockerfiles to pre-built images y
 - 
 - 
 - Re-implemented device discovery
+  
 - - Added `device_discovery_interval` option to change the frequency of discovering PS5 devices.
   
 - 
@@ -288,6 +303,7 @@ Because the add-on switched from locally built Dockerfiles to pre-built images y
 - 
 - 
 - Various minor tweaks and improvements.
+  
 
 ## 0.4.4
 
