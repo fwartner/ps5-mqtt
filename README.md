@@ -16,6 +16,8 @@
     <h1>PS5 MQTT</h1>
 </div>
 
+# Important Note:
+This project is just a maintained version of [https://github.com/FunkeyFlo/ps5-mqtt](https://github.com/FunkeyFlo/ps5-mqtt) and I will only support changes that I do on this project.
 
 Integrate your Sony Playstation 5 devices with Home Assistant using MQTT.
 
