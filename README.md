@@ -7,7 +7,7 @@
             <img src="https://img.shields.io/github/release/fwartner/ps5-mqtt.svg">
         </a>
         <a href="#">
-            <img src="https://img.shields.io/maintenance/yes/2022.svg">
+            <img src="https://img.shields.io/maintenance/yes/2023.svg">
         </a>
         <a href="https://github.com/fwartner/ps5-mqtt/LICENSE.md">
             <img src="https://img.shields.io/github/license/hassio-addons/addon-ssh.svg">
