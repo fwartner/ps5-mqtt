@@ -104,14 +104,14 @@ jobs:
         cp add-ons/common/.dockerignore add-ons/${{ needs.information.outputs.target }}
 
     - name: 🔐 Login to GitHub Container Registry
-      uses: docker/login-action@v2.0.0
+      uses: docker/login-action@v3
       with:
         registry: ghcr.io
-        username: ${{ github.repository_owner }}
+        username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
 
     - name: 🏭 [EDGE] Build & Publish add-on ${{ needs.information.outputs.target }}-${{ matrix.arch }}
-      uses: home-assistant/builder@2022.07.0
+      uses: home-assistant/builder@master
       if: needs.information.outputs.environment == 'edge'
       with:
         args: |
@@ -125,7 +125,7 @@ jobs:
           --addon
 
     - name: 🏭 [STABLE] Build & Publish add-on ${{ needs.information.outputs.target }}-${{ matrix.arch }}
-      uses: home-assistant/builder@2022.07.0
+      uses: home-assistant/builder@master
       if: needs.information.outputs.environment == 'stable'
       with:
         args: |
