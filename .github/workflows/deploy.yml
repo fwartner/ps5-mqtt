@@ -80,18 +80,18 @@ jobs:
     steps:
     - name: ⤵ Check out repository
       uses: actions/checkout@v3.0.2
-      
+
     - uses: actions/setup-node@v3
       with:
         node-version: 16
         registry-url: https://registry.npmjs.org/
         cache-dependency-path: ./ps5-mqtt/package-lock.json
         cache: 'npm'
-        
+
     - name: ⏬ Install dependencies
       working-directory: ./ps5-mqtt
       run: npm ci
-      
+
     - name: 👨‍🏭 Build App
       working-directory: ./ps5-mqtt
       run: npm run build
@@ -109,7 +109,7 @@ jobs:
         registry: ghcr.io
         username: ${{ github.repository_owner }}
         password: ${{ secrets.GITHUB_TOKEN }}
-        
+
     - name: 🏭 [EDGE] Build & Publish add-on ${{ needs.information.outputs.target }}-${{ matrix.arch }}
       uses: home-assistant/builder@2022.07.0
       if: needs.information.outputs.environment == 'edge'
@@ -123,7 +123,7 @@ jobs:
           --docker-hub "ghcr.io/${{ github.repository_owner }}" \
           --no-latest \
           --addon
-          
+
     - name: 🏭 [STABLE] Build & Publish add-on ${{ needs.information.outputs.target }}-${{ matrix.arch }}
       uses: home-assistant/builder@2022.07.0
       if: needs.information.outputs.environment == 'stable'
@@ -157,7 +157,7 @@ jobs:
           propertyPath: 'version'
           value: ${{ needs.information.outputs.version }}
           token: ${{ secrets.GITHUB_TOKEN }}
-          createPR: false
+          createPR: true
           commitChange: false
           updateFile: true
 
@@ -174,6 +174,6 @@ jobs:
           branch: main
           commit_message: >
             🎉 Release version ${{needs.information.outputs.version}}
-          
+
             [skip-ci]
           file_pattern: add-ons/ps5-mqtt/CHANGELOG.md add-ons/ps5-mqtt/config.yaml
